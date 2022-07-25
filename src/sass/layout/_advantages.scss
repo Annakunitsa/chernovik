@@ -1,0 +1,99 @@
+.advantages {
+  background-color: $background-color;
+  //padding-top: 40px;
+  padding-bottom: 60px;
+  @include tablet {
+    padding-bottom: 64px;
+  }
+  @include desktop {
+    padding-bottom: 120px;
+  }
+}
+
+.adv-list {
+  @include tablet {
+    display: flex;
+    gap: 22px;
+  }
+  @include desktop {
+    display: flex;
+    gap: 88px;
+  }
+}
+
+.adv-list-element:not(:last-child) {
+  margin-bottom: 32px;
+  @include tablet {
+    margin-bottom: 0;
+  }
+  @include desktop {
+    margin-bottom: 0;
+  }
+}
+
+.adv-list-element {
+  @include tablet {
+    width: 160px;
+  }
+  @include desktop {
+    width: 288px;
+  }
+}
+
+.figures {
+  display: block;
+  font-family: 'Titan One';
+  color: $main-title-color;
+  @include fonts(400, 36px, 1.14, 0.04em);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  @include tablet {
+    margin-bottom: 13px;
+  }
+  @include desktop {
+    @include fonts(400, 58px, 1.14, 0.04em);
+  }
+}
+
+.figures-text {
+  @include fonts(700, 12px, 1.7, null);
+  font-family: 'DM Sans';
+  color: #000000;
+}
+
+.adv-image {
+  margin-bottom: 16px;
+  @include tablet {
+    margin-bottom: 36px;
+  }
+  @include desktop {
+    margin-bottom: 40px;
+  }
+}
+
+/*.figure-1::before {
+  content: '';
+  display: inline-block;
+  background-image: url(./images/mob-milkcup-1x.png);
+  background-repeat: no-repeat;
+  margin-bottom: 16px;
+  //height: 50px;
+}
+
+.figure-2::before {
+  content: '';
+  display: inline-block;
+  background-image: url(./images/mob-applecup-1x.png);
+  background-repeat: no-repeat;
+  margin-bottom: 16px;
+  //height: 50px;
+}
+
+.figure-3::before {
+  content: '';
+  display: inline-block;
+  background-image: url(./images/mob-heart-1x.png);
+  background-repeat: no-repeat;
+  margin-bottom: 16px;
+  //height: 50px;
+//}*/
